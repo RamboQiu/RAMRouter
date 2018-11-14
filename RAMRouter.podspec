@@ -2,30 +2,32 @@
 Pod::Spec.new do |s|
   s.name             = 'RAMRouter'
   s.version          = '1.0.0'
-  s.summary          = ''
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'This is a good iOS Router'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/RamboQiu/RAMRouter.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'RamboQiu' => 'ramboq069@gmail.com' }
-  s.source           = { :git => 'git@github.com:RamboQiu/RAMRouter.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'RamboQiu' => '625217640@qq.com' }
+  s.source           = { :git => 'https://github.com/RamboQiu/RAMRouter.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'RAMRouter/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit'
-  #s.dependency 'CocoaLumberjack', '2.0.1'
-  #s.dependency 'Fabric'
-  #s.dependency 'Crashlytics'
+  s.default_subspec = 'RAMR3'
+
+  s.subspec 'RAMR3' do |rs|
+    rs.source_files  = "RAMR3/*.{h,m}",\
+                       "RAMR3/include/*.h",\
+                       "RAMR3/zmalloc.{c,h}"
+    rs.requires_arc = false
+    rs.public_header_files = "RAMR3/include/*.h"
+  end
+
+  s.subspec 'RAMLog' do |ls|
+    ls.source_files = "RAMLog/*.{h,m}"
+    ls.public_header_files = "RAMLog/*.h"
+  end
+
 end
 

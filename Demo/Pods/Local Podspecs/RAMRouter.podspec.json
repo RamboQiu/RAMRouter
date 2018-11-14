@@ -1,0 +1,40 @@
+{
+  "name": "RAMRouter",
+  "version": "1.0.0",
+  "summary": "This is a good iOS Router",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/RamboQiu/RAMRouter.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RamboQiu": "625217640@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/RamboQiu/RAMRouter.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RAMRouter/**/*",
+  "default_subspecs": "RAMR3",
+  "subspecs": [
+    {
+      "name": "RAMR3",
+      "source_files": [
+        "RAMR3/*.{h,m}",
+        "RAMR3/include/*.h",
+        "RAMR3/zmalloc.{c,h}"
+      ],
+      "requires_arc": false,
+      "public_header_files": "RAMR3/include/*.h"
+    },
+    {
+      "name": "RAMLog",
+      "source_files": "RAMLog/*.{h,m}",
+      "public_header_files": "RAMLog/*.h"
+    }
+  ]
+}

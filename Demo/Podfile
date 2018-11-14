@@ -1,13 +1,13 @@
 #source 'git@git.mail.netease.com:yanxuan-app/Specs.git' #严选私有仓库 优先级最高
 #source 'git@git.mail.netease.com:client/Specs.git' #邮件私有仓库
 source 'https://github.com/CocoaPods/Specs.git'        #公共仓库
-source 'https://g.hz.netease.com/CocoaPods/Specs.git'
+#source 'https://g.hz.netease.com/CocoaPods/Specs.git'
 #source 'git@github.com:CocoaPods/Specs.git'
 
 
 
 platform :ios, '8.0'
 target 'QJYRouter' do
-    pod 'NEStatistics', :path => '/Users/qiujunyun/Documents/WorkSpace/objcio/RAMRouter', :branch => 'dev'
+    pod 'RAMRouter', :path => '/Users/qiujunyun/Documents/WorkSpace/objcio/RAMRouter', :branch => 'dev'
 end
 

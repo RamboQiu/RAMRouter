@@ -1,3 +1,19 @@
-PODFILE CHECKSUM: c6ef1c1da56d7f6fd11c92111b9611cc61ff4830
+PODS:
+  - RAMRouter (1.0.0):
+    - RAMRouter/RAMR3 (= 1.0.0)
+  - RAMRouter/RAMR3 (1.0.0)
+
+DEPENDENCIES:
+  - RAMRouter (from `/Users/qiujunyun/Documents/WorkSpace/objcio/RAMRouter`)
+
+EXTERNAL SOURCES:
+  RAMRouter:
+    :branch: dev
+    :path: "/Users/qiujunyun/Documents/WorkSpace/objcio/RAMRouter"
+
+SPEC CHECKSUMS:
+  RAMRouter: 971c460ca978938a666f4880ef4d2ade0363414b
+
+PODFILE CHECKSUM: d87325749b25f7b2e6d3db7e2abde054ce0d8263
 
 COCOAPODS: 1.1.1
