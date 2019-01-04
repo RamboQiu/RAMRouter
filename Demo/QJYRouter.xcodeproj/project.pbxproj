@@ -13,6 +13,8 @@
 		355450872181B1A000EA9287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355450862181B1A000EA9287 /* Assets.xcassets */; };
 		3554508A2181B1A000EA9287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355450882181B1A000EA9287 /* LaunchScreen.storyboard */; };
 		3554508D2181B1A000EA9287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3554508C2181B1A000EA9287 /* main.m */; };
+		35EE2B8A21DEFC9A00CFEB89 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE2B8921DEFC9A00CFEB89 /* ViewController1.m */; };
+		35EE2B8D21DEFCA400CFEB89 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE2B8C21DEFCA400CFEB89 /* ViewController2.m */; };
 		69171DF5E0799146214AC018 /* libPods-QJYRouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 850B092B980C4E1826755C88 /* libPods-QJYRouter.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,11 @@
 		355450892181B1A000EA9287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3554508B2181B1A000EA9287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3554508C2181B1A000EA9287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35EE2B8821DEFC9A00CFEB89 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		35EE2B8921DEFC9A00CFEB89 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		35EE2B8B21DEFCA400CFEB89 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		35EE2B8C21DEFCA400CFEB89 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		35EE2B8E21DEFEA700CFEB89 /* QJYRouter.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QJYRouter.pch; sourceTree = "<group>"; };
 		7C699E2A0C750B6955FB7BFA /* Pods-QJYRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJYRouter.release.xcconfig"; path = "Pods/Target Support Files/Pods-QJYRouter/Pods-QJYRouter.release.xcconfig"; sourceTree = "<group>"; };
 		850B092B980C4E1826755C88 /* libPods-QJYRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QJYRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,11 +85,16 @@
 				3554507E2181B19F00EA9287 /* AppDelegate.m */,
 				355450802181B19F00EA9287 /* ViewController.h */,
 				355450812181B19F00EA9287 /* ViewController.m */,
+				35EE2B8821DEFC9A00CFEB89 /* ViewController1.h */,
+				35EE2B8921DEFC9A00CFEB89 /* ViewController1.m */,
+				35EE2B8B21DEFCA400CFEB89 /* ViewController2.h */,
+				35EE2B8C21DEFCA400CFEB89 /* ViewController2.m */,
 				355450832181B19F00EA9287 /* Main.storyboard */,
 				355450862181B1A000EA9287 /* Assets.xcassets */,
 				355450882181B1A000EA9287 /* LaunchScreen.storyboard */,
 				3554508B2181B1A000EA9287 /* Info.plist */,
 				3554508C2181B1A000EA9287 /* main.m */,
+				35EE2B8E21DEFEA700CFEB89 /* QJYRouter.pch */,
 			);
 			path = QJYRouter;
 			sourceTree = "<group>";
@@ -216,7 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35EE2B8A21DEFC9A00CFEB89 /* ViewController1.m in Sources */,
 				355450822181B19F00EA9287 /* ViewController.m in Sources */,
+				35EE2B8D21DEFCA400CFEB89 /* ViewController2.m in Sources */,
 				3554508D2181B1A000EA9287 /* main.m in Sources */,
 				3554507F2181B19F00EA9287 /* AppDelegate.m in Sources */,
 			);
@@ -361,6 +375,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QJYRouter/QJYRouter.pch;
 				INFOPLIST_FILE = QJYRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,6 +395,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QJYRouter/QJYRouter.pch;
 				INFOPLIST_FILE = QJYRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

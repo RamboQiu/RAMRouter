@@ -10,13 +10,11 @@
 
 @interface RAMRouterParam : NSObject
 @property (nonatomic, strong) UIViewController *fromViewController;
-@property (nonatomic, strong) Class controllerClass;
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, strong) NSDictionary *urlParams;
 @property (nonatomic, strong) id params;
 @property (nonatomic, strong) id delegate;
 @property (nonatomic, assign) RAMControllerLaunchMode launchMode;
-@property (nonatomic, assign) RAMControllerInstanceMode instanceMode;
 @property (nonatomic, assign) RAMControllerInstanceShowMode singleInstanceShowMode;
 @property (nonatomic, assign) BOOL bAnimate;
 

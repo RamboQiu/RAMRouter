@@ -4,16 +4,15 @@ PODS:
   - RAMRouter/RAMR3 (1.0.0)
 
 DEPENDENCIES:
-  - RAMRouter (from `/Users/qiujunyun/Documents/WorkSpace/objcio/RAMRouter`)
+  - RAMRouter (from `/Users/qiujunyun/Documents/WorkSpace/github/RAMRouter`)
 
 EXTERNAL SOURCES:
   RAMRouter:
-    :branch: dev
-    :path: "/Users/qiujunyun/Documents/WorkSpace/objcio/RAMRouter"
+    :path: "/Users/qiujunyun/Documents/WorkSpace/github/RAMRouter"
 
 SPEC CHECKSUMS:
   RAMRouter: 971c460ca978938a666f4880ef4d2ade0363414b
 
-PODFILE CHECKSUM: d87325749b25f7b2e6d3db7e2abde054ce0d8263
+PODFILE CHECKSUM: 6be136f3ab7e48b8d9de9c963bdcca8ca8f6933f
 
 COCOAPODS: 1.1.1

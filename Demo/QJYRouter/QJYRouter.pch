@@ -1,0 +1,14 @@
+//
+//  QJYRouter.pch
+//  QJYRouter
+//
+//  Created by 裘俊云 on 2019/1/4.
+//  Copyright © 2019 裘俊云. All rights reserved.
+//
+
+#ifndef QJYRouter_pch
+#define QJYRouter_pch
+
+#import <RAMRouter/RAMRouter.h>
+
+#endif /* QJYRouter_pch */

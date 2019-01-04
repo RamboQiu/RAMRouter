@@ -15,16 +15,7 @@ typedef NS_ENUM(NSInteger, RAMControllerLaunchMode){
     RAMControllerLaunchModePush,
     RAMControllerLaunchModePresent,
     RAMControllerLaunchModePushNavigation,
-    RAMControllerLaunchModePresentNavigation,
-};
-
-//vc的实例如何构造
-typedef NS_ENUM(NSInteger, RAMControllerInstanceMode){
-    RAMControllerInstanceModeDefault,
-    RAMControllerInstanceModeNormal,
-    RAMControllerInstanceModeWrapContainer,
-    RAMControllerInstanceModeSingleInstance,
-    RAMControllerInstanceModeSingleTask, //当present vc tree上存在一个实例时，使用这个实例
+    RAMControllerLaunchModePresentNavigation
 };
 
 //单实例vc如何显示
@@ -32,7 +23,7 @@ typedef NS_ENUM(NSInteger, RAMControllerInstanceShowMode){
     RAMControllerInstanceShowModeDefault,
     RAMControllerInstanceShowModeNOAction,
     RAMControllerInstanceShowModeMoveToTop,
-    RAMControllerInstanceShowModeClearToTop,
+    RAMControllerInstanceShowModeClearToTop
 };
 
 #define RAM_EXPORT() __attribute__((used, section("__DATA,RAMExport" \

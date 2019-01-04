@@ -14,9 +14,7 @@
 - (instancetype)initWithControllerClass:(Class)viewControllerClass;
 
 @property (nonatomic, assign) RAMControllerLaunchMode launchMode;
-@property (nonatomic, assign) RAMControllerInstanceMode instanceMode;
 @property (nonatomic, assign) RAMControllerInstanceShowMode singleInstanceShowMode;
-@property (nonatomic, strong) Protocol *delegateProtocol;
 
 @property (nonatomic, strong) Class viewControllerClass;
 

@@ -32,27 +32,6 @@ NSString *RAMControllerLaunchModeToString(RAMControllerLaunchMode mode) {
     }
 }
 
-NSString *RAMControllerInstanceModeToString(RAMControllerInstanceMode mode) {
-    switch (mode) {
-            case RAMControllerInstanceModeDefault:
-            return @"RAMControllerInstanceModeDefault";
-            
-            case RAMControllerInstanceModeNormal:
-            return @"RAMControllerInstanceModeNormal";
-            
-            case RAMControllerInstanceModeSingleInstance:
-            return @"RAMControllerInstanceModeSingleInstance";
-            
-            case RAMControllerInstanceModeWrapContainer:
-            return @"RAMControllerInstanceModeWrapContainer";
-            
-            case RAMControllerInstanceModeSingleTask:
-            return @"RAMControllerInstanceModeSingleTask";
-        default:
-            break;
-    }
-}
-
 NSString *RAMControllerInstanceShowModeToString(RAMControllerInstanceShowMode mode) {
     switch (mode) {
             
@@ -105,13 +84,11 @@ NSString *RAMControllerInstanceShowModeToString(RAMControllerInstanceShowMode mo
 - (id)copy {
     RAMRouterParam *param = [RAMRouterParam new];
     param.fromViewController = self.fromViewController;
-    param.controllerClass = self.controllerClass;
     param.url = self.url;
     param.urlParams = self.urlParams;
     param.params = self.params;
     param.delegate = self.delegate;
     param.launchMode = self.launchMode;
-    param.instanceMode = self.instanceMode;
     param.singleInstanceShowMode = self.singleInstanceShowMode;
     param.bAnimate = self.bAnimate;
     
@@ -122,9 +99,7 @@ NSString *RAMControllerInstanceShowModeToString(RAMControllerInstanceShowMode mo
     NSMutableString *desc = [[NSMutableString alloc] initWithString:NSStringFromClass(self.class)];
     
     if (_url)
-    [desc appendFormat:@" url:%@", _url];
-    else if (_controllerClass)
-    [desc appendFormat:@" url:%@", _controllerClass];
+        [desc appendFormat:@" url:%@", _url];
     
     if (_params){
         [desc appendFormat:@" param:%@", _params];
@@ -136,7 +111,6 @@ NSString *RAMControllerInstanceShowModeToString(RAMControllerInstanceShowMode mo
     
     [desc appendFormat:@" launchMode:%@", RAMControllerLaunchModeToString(self.launchMode)];
     [desc appendFormat:@" singleInstanceShowMode:%@", RAMControllerInstanceShowModeToString(self.singleInstanceShowMode)];
-    [desc appendFormat:@" instanceMode:%@", RAMControllerInstanceModeToString(self.instanceMode)];
     
     return desc;
 }

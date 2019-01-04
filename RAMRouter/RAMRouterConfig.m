@@ -21,7 +21,6 @@
         _urlMatchers = [NSMutableArray new];
         _urls = [NSMutableArray new];
         _launchMode = RAMControllerLaunchModePush;
-        _instanceMode = RAMControllerInstanceModeNormal;
         _singleInstanceShowMode = RAMControllerInstanceShowModeNOAction;
         
         if (url) {
