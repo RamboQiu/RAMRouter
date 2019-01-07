@@ -6,7 +6,6 @@
 //
 
 #import "RAMRouterR3PathMatcher.h"
-#import "RAMAdditionalLogger.h"
 #import "RAMRouterConfig.h"
 
 static NSString * const kDefaultScheme = @"__defaultScheme__";
@@ -88,7 +87,7 @@ void *r3_node_data(node *n);
                 schemeRange.length = schemeEndRange.location;
             }
             else{
-                RAMLOG_ERROR(@"RAMR3PathMatcher add url failed:%@", url);
+                NSLog(@"RAMR3PathMatcher add url failed:%@", url);
                 return;
             }
             
@@ -119,7 +118,7 @@ void *r3_node_data(node *n);
     
     node *n = r3_tree_insert_pathl_ex(matcher.rootNode, url.UTF8String, (int)url.length, NULL, (__bridge void*)config, NULL);
     if (!n){
-        RAMLOG_ERROR(@"RAMR3PathMatcher add url failed:%@", url);
+        NSLog(@"RAMR3PathMatcher add url failed:%@", url);
     }
 }
 

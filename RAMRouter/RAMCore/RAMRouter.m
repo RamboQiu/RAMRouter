@@ -9,7 +9,6 @@
 #import "RAMRouterCollection.h"
 #import "RAMRouterConfig.h"
 #import "RAMRouterParam.h"
-#import "RAMAdditionalLogger.h"
 #import "RAMRouterR3PathMatcher.h"
 #import "UIViewController+RAMUtils.h"
 #import "RAMContainerViewController.h"
@@ -110,7 +109,7 @@
         
         return [self routeViewController:foundRouterConfig withParam:routeParam];
     } else {
-        RAMLOG_WARN(@"Cannot find route config to param:%@", param);
+        NSLog(@"Cannot find route config to param:%@", param);
     }
     return nil;
 }
@@ -120,11 +119,11 @@
     
     UIViewController *vc = [routeConfig.viewControllerClass new];
     if (!vc){
-        RAMLOG_WARN(@"Cannot find route config to param:%@", param);
+        NSLog(@"Cannot find route config to param:%@", param);
         return nil;
     }
     
-    RAMLOG_DBUG(@"route:%@", param);
+    NSLog(@"route:%@", param);
     
     RAMControllerLaunchMode launchMode = param.launchMode == RAMControllerLaunchModeDefault ? routeConfig.launchMode : param.launchMode;
     RAMControllerInstanceShowMode singleInstanceShowMode = param.singleInstanceShowMode == RAMControllerInstanceShowModeDefault ? routeConfig.singleInstanceShowMode : param.singleInstanceShowMode;
@@ -164,13 +163,13 @@
     switch (param.launchMode) {
         case RAMControllerLaunchModePush:
         default: {
-            RAMLOG_DBUG(@"launch normal push");
+            NSLog(@"launch normal push");
             
             if (!fromViewController){
                 UIViewController *topmostViewController = [UIViewController ram_topMostController];
                 fromViewController = [topmostViewController ram_innerMostNavigationController];
                 if (!fromViewController){
-                    RAMLOG_DBUG(@"cannot auto find from view controller");
+                    NSLog(@"cannot auto find from view controller");
                     return;
                 }
             }
@@ -183,7 +182,7 @@
         } break;
             
         case RAMControllerLaunchModePresent: {
-            RAMLOG_DBUG(@"launch normal present");
+            NSLog(@"launch normal present");
             
             if (!fromViewController){
                 fromViewController = [UIViewController ram_topMostController];
@@ -194,13 +193,13 @@
         } break;
             
         case RAMControllerLaunchModePushNavigation: {
-            RAMLOG_DBUG(@"launch push navigation");
+            NSLog(@"launch push navigation");
             
             [self pushNavigationWrappedController:viewController withConfig:config param:param];
         } break;
             
         case RAMControllerLaunchModePresentNavigation: {
-            RAMLOG_DBUG(@"launch present navigation");
+            NSLog(@"launch present navigation");
             
             [self presentNavigationWrappedController:viewController withConfig:config param:param];
         } break;
@@ -215,7 +214,7 @@
         UIViewController *topmostViewController = [UIViewController ram_topMostController];
         fromViewController = [topmostViewController ram_innerMostNavigationControllerWithNavigationBarHidden:YES];
         if (!fromViewController){
-            RAMLOG_DBUG(@"cannot auto find from view controller");
+            NSLog(@"cannot auto find from view controller");
             return;
         }
     }

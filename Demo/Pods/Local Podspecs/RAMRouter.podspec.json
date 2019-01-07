@@ -18,23 +18,31 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RAMRouter/**/*",
-  "default_subspecs": "RAMR3",
+  "default_subspecs": [
+    "RAMR3",
+    "RAMController",
+    "RAMCore"
+  ],
   "subspecs": [
     {
       "name": "RAMR3",
       "source_files": [
-        "RAMR3/*.{h,m}",
-        "RAMR3/include/*.h",
-        "RAMR3/zmalloc.{c,h}"
+        "RAMRouter/RAMR3/*.{h,m}",
+        "RAMRouter/RAMR3/include/*.h",
+        "RAMRouter/RAMR3/zmalloc.{c,h}"
       ],
-      "requires_arc": false,
-      "public_header_files": "RAMR3/include/*.h"
+      "requires_arc": true,
+      "public_header_files": "RAMRouter/RAMR3/include/*.h"
     },
     {
-      "name": "RAMLog",
-      "source_files": "RAMLog/*.{h,m}",
-      "public_header_files": "RAMLog/*.h"
+      "name": "RAMController",
+      "source_files": "RAMRouter/RAMController/*.{h,m}",
+      "public_header_files": "RAMRouter/RAMController/*.h"
+    },
+    {
+      "name": "RAMCore",
+      "source_files": "RAMRouter/RAMCore/*.{h,m}",
+      "public_header_files": "RAMRouter/RAMCore/*.h"
     }
   ]
 }
