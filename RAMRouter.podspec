@@ -13,6 +13,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/RamboQiu/RAMRouter.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.default_subspec = 'RAMR3','RAMController','RAMCore'
+  s.dependency 'RAMUtil/RAMLog'
 
   s.subspec 'RAMR3' do |rs|
     rs.source_files  = "RAMRouter/RAMR3/*.{h,m}",\

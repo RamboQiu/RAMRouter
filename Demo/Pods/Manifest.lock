@@ -3,19 +3,29 @@ PODS:
     - RAMRouter/RAMController (= 1.0.0)
     - RAMRouter/RAMCore (= 1.0.0)
     - RAMRouter/RAMR3 (= 1.0.0)
-  - RAMRouter/RAMController (1.0.0)
-  - RAMRouter/RAMCore (1.0.0)
-  - RAMRouter/RAMR3 (1.0.0)
+    - RAMUtil/RAMLog
+  - RAMRouter/RAMController (1.0.0):
+    - RAMUtil/RAMLog
+  - RAMRouter/RAMCore (1.0.0):
+    - RAMUtil/RAMLog
+  - RAMRouter/RAMR3 (1.0.0):
+    - RAMUtil/RAMLog
+  - RAMUtil/RAMLog (1.0.0)
 
 DEPENDENCIES:
   - RAMRouter (from `/Users/qiujunyun/Documents/WorkSpace/github/RAMRouter`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RAMUtil
 
 EXTERNAL SOURCES:
   RAMRouter:
     :path: "/Users/qiujunyun/Documents/WorkSpace/github/RAMRouter"
 
 SPEC CHECKSUMS:
-  RAMRouter: da9130f1df0060afd74736c35e01220794385e53
+  RAMRouter: 5dcd25803c5bdceadd6b777daee8d9e35f246469
+  RAMUtil: a964c4fa1802f56e761cdb57bccaf881be0959ae
 
 PODFILE CHECKSUM: c384d729ab606266b4e2e7a3ee611f57f65c7ed8
 

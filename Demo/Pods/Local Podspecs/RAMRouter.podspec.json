@@ -23,6 +23,11 @@
     "RAMController",
     "RAMCore"
   ],
+  "dependencies": {
+    "RAMUtil/RAMLog": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "RAMR3",
@@ -31,8 +36,7 @@
         "RAMRouter/RAMR3/include/*.h",
         "RAMRouter/RAMR3/zmalloc.{c,h}"
       ],
-      "requires_arc": true,
-      "public_header_files": "RAMRouter/RAMR3/include/*.h"
+      "requires_arc": false
     },
     {
       "name": "RAMController",

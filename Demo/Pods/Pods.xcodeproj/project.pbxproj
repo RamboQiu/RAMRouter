@@ -3,55 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0692F4C43F1B0A367D0E3D9C36367A44 /* r3_json.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF041414029E27EFD457F03BA499B08 /* r3_json.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09B01031CFAC77563427519D87D45DBD /* zmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 24BD81571B9AD1F27776A15A88C33B8C /* zmalloc.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		10B9DA63C2AF9D5F0609CD0FEF9F09FD /* r3_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F12867EE55979834F0468EAA4B95A5 /* r3_list.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1158EC4AA23D7EA52CBD490C33F0CBA5 /* RAMContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 016E2B4DCB92AFA925A875F5B1CFADBA /* RAMContainerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		157CD213EAEC3FF793E5A4D7113A64BD /* RAMNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = B985DE24BD5AE44BD82AEB2E2D0B3AA6 /* RAMNavigationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		17A2E8EB88A0DAF63D1C765174299692 /* RAMRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4BE0DBCFC0FD48434CF1BF49DE3F5 /* RAMRouter-dummy.m */; };
-		1B6F18216A52D0BFBB47A4751DB855AA /* RAMRouterCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BC251334BD8D002D179F9B13A41FD6 /* RAMRouterCollection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2F8AD97EB0D4A395FB6D094C4E86BB52 /* RAMRouterR3PathMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F472054EF094F821DB35B6F9104B06B2 /* RAMRouterR3PathMatcher.m */; };
-		2FA1D9F817E834FA0E36A788F6A5EB1D /* Pods-QJYRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE03C6A8337F77E1192026F21A40AE /* Pods-QJYRouter-dummy.m */; };
-		2FAB139F7D5A0DF4B59B8CC25AD3F394 /* token.m in Sources */ = {isa = PBXBuildFile; fileRef = A147653877C8538F6E723A3A94561E6E /* token.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3A373668520BDFA049D13AC5FB6D805D /* RAMRouterConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B8AFB0F82EC025DEA2F3D3E7CE6400 /* RAMRouterConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		40FC277E68A06FC8B6C28DA7E1523604 /* r3_define.h in Headers */ = {isa = PBXBuildFile; fileRef = 98409E957B05C05731C999823FD70D94 /* r3_define.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		48DFDCAD17DDAA1E669E3F21F02AEA4E /* r3_gvc.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D86E84E142653CEBF70E578EF23872 /* r3_gvc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4F4019FE8566ED32B44CD687D75F6763 /* RAMRouterR3PathMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5E4A6ED54AD0F9DC977164191D8319 /* RAMRouterR3PathMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5E0DB07FA8A5A8A16CA6128C496CFE25 /* str.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AF7750A17377BCB8EADBFF22FD5410 /* str.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6677A0FDE28E39BF5BB8ADA2B761B003 /* list.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C41C15330119F143A147DB37AC4F /* list.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		69C71DC7CC36C90A32C3EDC03C464E82 /* slug.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F56337D956F79BB6C69CCB16284FDDE /* slug.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		74BF325C359ABF977112022564AA671C /* RAMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47915F8AA534E2C4C1288411DC900991 /* RAMNavigationController.m */; };
-		7752E1337C50E54896C5C50F46C9E5F1 /* UIViewController+RAMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F9834830FF8E17E73655F7E84B370 /* UIViewController+RAMUtils.m */; };
-		78BB5B0A600C2B2D0A6799DB49362331 /* edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6E663E161F6C7DF911E2238EC6C5C /* edge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		808B4C8D6562E04131459F03F4BECAB7 /* RAMRouterConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 99326C55006B302FB0A6139375A6B6A4 /* RAMRouterConfig.m */; };
-		9AF49F3E53FC79EE0859A86374452D65 /* slug.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E2631BC119F5C396ABFCA8CD78C19C /* slug.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A8294FCE6DDCCFB12FD52D4157723CE7 /* RAMRouterHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 02959526BD70DB7DED5FF31E50ECA7B4 /* RAMRouterHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A8F39F2BCCA5BFE16B4A600D2BE708E0 /* node.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F959CB9F429923C72CF71ABE8A526A /* node.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A9655F44B24E0CD0523C4116D3B680BE /* RAMRouterParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 311C733462428214E6D42046C89C7294 /* RAMRouterParam.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B8D4EC1CD500C946863DB70E4F07C554 /* RAMContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AF9D59FCE2907CD0C9C57097C1E736 /* RAMContainerViewController.m */; };
-		CAB92F53915F2B0D73E0819861D9EA34 /* match_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2FAD7DA11185E5A4242D3B03A70C3 /* match_entry.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CAE81681698E043FB177767A580C0B29 /* RAMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6FB61ED6B7A0A2635F21C082480D9D /* RAMRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D26881310E3D9A36A9A8DDC55AED8BC5 /* UIViewController+RAMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E963E6556C90B4482923A157818FD7 /* UIViewController+RAMUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D73D4B628DE06CED088869247D33FDBD /* r3_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF06A015E220B8D0A260B0CB343AA35 /* r3_str.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E57E6B21EC59191C4A60AF0B72CE5E57 /* RAMRouterParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 33049F9AFA19AA31C697604078E0A52B /* RAMRouterParam.m */; };
-		EDD663DB7F8C47B456B88AA9B908C501 /* str_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 360849F861652C3AAC8030F47C6FB2DB /* str_array.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EEECB94281BB76A65573BC6291CDBFF2 /* r3.h in Headers */ = {isa = PBXBuildFile; fileRef = D66CE1781E26373D2DD71F9CB99BD792 /* r3.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EFF79834577E79C5F6ED923E1E9D31A5 /* RAMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F4D2BFD59DDD4F3B71ADBCD96810 /* RAMRouter.m */; };
-		F4D6095CDBD167C2F9D66F34484F6E6F /* RAMRouterCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65786DED7ACC6AA6039C71D2B6E0F7DA /* RAMRouterCollection.m */; };
-		FA116BF2FC0ACA043B40AFAA11D8B4D1 /* zmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A477B77232D6767B486CF9B0E8161D /* zmalloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		104B1701F934B791F1CBF138A922ED53 /* match_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2FAD7DA11185E5A4242D3B03A70C3 /* match_entry.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		13DD8916A54FD0E3B180944AEB77482C /* list.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C41C15330119F143A147DB37AC4F /* list.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		155C081CCC06E13F9112CDAA4BCE7404 /* slug.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E2631BC119F5C396ABFCA8CD78C19C /* slug.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1968BB36E4510E7F99ABC402640414A5 /* RAMContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AF9D59FCE2907CD0C9C57097C1E736 /* RAMContainerViewController.m */; };
+		225C91033FDD421D6457DACEAF95E676 /* RAMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47915F8AA534E2C4C1288411DC900991 /* RAMNavigationController.m */; };
+		22B210AE634C39207F843C2CC54F3DA5 /* str_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 360849F861652C3AAC8030F47C6FB2DB /* str_array.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		277FCE37D54D75E4738987A4AF150DFD /* RAMRouterParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 311C733462428214E6D42046C89C7294 /* RAMRouterParam.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		398CC4120C69E33C165B4671F6F4A64D /* r3_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF06A015E220B8D0A260B0CB343AA35 /* r3_str.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AB219804130A5A83DACB80003EB3FAD /* RAMAdditionalLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EED669FCFAFB18E17755D9C3F1D13980 /* RAMAdditionalLogger.m */; };
+		4513116B519F47717D9C98DEF93AB2E3 /* r3_define.h in Headers */ = {isa = PBXBuildFile; fileRef = 98409E957B05C05731C999823FD70D94 /* r3_define.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		47F42303648D5AC27752DE81049C6FC1 /* r3_json.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF041414029E27EFD457F03BA499B08 /* r3_json.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		515F14141E82BF0BCC9E8E4A5539743E /* RAMRouterCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BC251334BD8D002D179F9B13A41FD6 /* RAMRouterCollection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51750BC9EA8E4F58AF65708CACCC2068 /* RAMRouterR3PathMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5E4A6ED54AD0F9DC977164191D8319 /* RAMRouterR3PathMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		584B9FF9AAFA4B709F47513EF73D22F1 /* UIViewController+RAMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F9834830FF8E17E73655F7E84B370 /* UIViewController+RAMUtils.m */; };
+		58CFDDC0BD68655D6F379922F93E971B /* RAMRouterConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 99326C55006B302FB0A6139375A6B6A4 /* RAMRouterConfig.m */; };
+		5D557AEA12ED16C450748F66864097E3 /* RAMContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 016E2B4DCB92AFA925A875F5B1CFADBA /* RAMContainerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		686026BEC15F7394D8B869AD85B163F9 /* r3_gvc.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D86E84E142653CEBF70E578EF23872 /* r3_gvc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BA87BD4426E8736F04F5D51C1C8A8A6 /* RAMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F4D2BFD59DDD4F3B71ADBCD96810 /* RAMRouter.m */; };
+		70DC278EEC9499183DA82409CC91CFA9 /* str.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AF7750A17377BCB8EADBFF22FD5410 /* str.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7C887548E2CF06029F68BEA0D57ABE8E /* RAMRouterParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 33049F9AFA19AA31C697604078E0A52B /* RAMRouterParam.m */; };
+		7EF42B6881A2CE29DA30CABD7A2D6D09 /* RAMRouterCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65786DED7ACC6AA6039C71D2B6E0F7DA /* RAMRouterCollection.m */; };
+		935EBDCB4289E23FAC208B2109804EE7 /* RAMUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C183A584637B83DCACD9FA963F8015D9 /* RAMUtil-dummy.m */; };
+		976D2CCFD2EE51FE1990B9132993D5FC /* r3.h in Headers */ = {isa = PBXBuildFile; fileRef = D66CE1781E26373D2DD71F9CB99BD792 /* r3.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A6D81A929E9B88CE7A55EC7178D2186F /* slug.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F56337D956F79BB6C69CCB16284FDDE /* slug.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B62FB21472CA4C4A383436E0244373C3 /* RAMRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4BE0DBCFC0FD48434CF1BF49DE3F5 /* RAMRouter-dummy.m */; };
+		B960D9F55AD4E44F8775E4A5B68B5E4F /* r3_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F12867EE55979834F0468EAA4B95A5 /* r3_list.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BBEC953ACED1213F449CB779339F2E49 /* RAMRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6FB61ED6B7A0A2635F21C082480D9D /* RAMRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C131EA83781CB5AFA5FE85A8A1DA0A29 /* edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6E663E161F6C7DF911E2238EC6C5C /* edge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C2E958B00C9037FAFC19ECC65F2977A2 /* Pods-QJYRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE03C6A8337F77E1192026F21A40AE /* Pods-QJYRouter-dummy.m */; };
+		CF766892690DF9D19BA03A9835A41FAF /* zmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A477B77232D6767B486CF9B0E8161D /* zmalloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D639BD5AE4133112149F3CE5628249BA /* UIViewController+RAMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E963E6556C90B4482923A157818FD7 /* UIViewController+RAMUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D65262E2487452A0BEEE89DFB70E8201 /* node.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F959CB9F429923C72CF71ABE8A526A /* node.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D83BFEC7D48B24D406DD65A915092365 /* RAMNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = B985DE24BD5AE44BD82AEB2E2D0B3AA6 /* RAMNavigationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DFB78E5E2B8382D0F4041A5E67FED9DD /* RAMAdditionalLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0A48F48708CE1EA6203F6DADB4CFDD /* RAMAdditionalLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E215896BFD9680D976319FD8F4425F71 /* zmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 24BD81571B9AD1F27776A15A88C33B8C /* zmalloc.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E54F6E8C13CFA9E88B35A66338B849EC /* token.m in Sources */ = {isa = PBXBuildFile; fileRef = A147653877C8538F6E723A3A94561E6E /* token.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E9064C8B30FC6AEAF6032801D3312299 /* RAMRouterHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 02959526BD70DB7DED5FF31E50ECA7B4 /* RAMRouterHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EAD64D028DA9F0401065D489D62E3D5F /* RAMRouterConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B8AFB0F82EC025DEA2F3D3E7CE6400 /* RAMRouterConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF0AE15A5B3DCA5C6C8A7E3D526AC094 /* RAMRouterR3PathMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F472054EF094F821DB35B6F9104B06B2 /* RAMRouterR3PathMatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		43FC01296BEDBA346485B0A077C85134 /* PBXContainerItemProxy */ = {
+		40CE72FE0D6A8D0C25D60D40F542100B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E5552CAE115BC29AAA6A1EE48468A0C6;
+			remoteGlobalIDString = C6C1A0C5B0E22AB2A428A30B40365733;
+			remoteInfo = RAMUtil;
+		};
+		A92C946D7FC6CD05E59B2795AA628B1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A6393DDCEAA02D06EE6C02733BAE9A9;
 			remoteInfo = RAMRouter;
+		};
+		CB674B099189B6C8C05604D7DB95F1A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6C1A0C5B0E22AB2A428A30B40365733;
+			remoteInfo = RAMUtil;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,48 +77,54 @@
 		016E2B4DCB92AFA925A875F5B1CFADBA /* RAMContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMContainerViewController.h; path = RAMRouter/RAMController/RAMContainerViewController.h; sourceTree = "<group>"; };
 		02959526BD70DB7DED5FF31E50ECA7B4 /* RAMRouterHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMRouterHeader.h; path = RAMRouter/RAMCore/RAMRouterHeader.h; sourceTree = "<group>"; };
 		0CF06A015E220B8D0A260B0CB343AA35 /* r3_str.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = r3_str.h; sourceTree = "<group>"; };
-		186E29EE1193E0EC399107DCC257A08B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		24BD81571B9AD1F27776A15A88C33B8C /* zmalloc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zmalloc.c; path = RAMRouter/RAMR3/zmalloc.c; sourceTree = "<group>"; };
+		186E29EE1193E0EC399107DCC257A08B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		24BD81571B9AD1F27776A15A88C33B8C /* zmalloc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zmalloc.c; path = RAMRouter/RAMR3/zmalloc.c; sourceTree = "<group>"; };
 		25F959CB9F429923C72CF71ABE8A526A /* node.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = node.m; path = RAMRouter/RAMR3/node.m; sourceTree = "<group>"; };
 		311C733462428214E6D42046C89C7294 /* RAMRouterParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMRouterParam.h; path = RAMRouter/RAMCore/RAMRouterParam.h; sourceTree = "<group>"; };
 		33049F9AFA19AA31C697604078E0A52B /* RAMRouterParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMRouterParam.m; path = RAMRouter/RAMCore/RAMRouterParam.m; sourceTree = "<group>"; };
 		35AF9D59FCE2907CD0C9C57097C1E736 /* RAMContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMContainerViewController.m; path = RAMRouter/RAMController/RAMContainerViewController.m; sourceTree = "<group>"; };
 		360849F861652C3AAC8030F47C6FB2DB /* str_array.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = str_array.h; sourceTree = "<group>"; };
+		3D882C5E6059658A0A25724F6A66C9FC /* libRAMUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRAMUtil.a; path = libRAMUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		47915F8AA534E2C4C1288411DC900991 /* RAMNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMNavigationController.m; path = RAMRouter/RAMController/RAMNavigationController.m; sourceTree = "<group>"; };
+		4D4F9A743FC4201BE082B580DAAA6DD5 /* libPods-QJYRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-QJYRouter.a"; path = "libPods-QJYRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB6E663E161F6C7DF911E2238EC6C5C /* edge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = edge.m; path = RAMRouter/RAMR3/edge.m; sourceTree = "<group>"; };
 		4FB4BE0DBCFC0FD48434CF1BF49DE3F5 /* RAMRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMRouter-dummy.m"; sourceTree = "<group>"; };
 		54A477B77232D6767B486CF9B0E8161D /* zmalloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zmalloc.h; path = RAMRouter/RAMR3/zmalloc.h; sourceTree = "<group>"; };
 		55E2631BC119F5C396ABFCA8CD78C19C /* slug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = slug.m; path = RAMRouter/RAMR3/slug.m; sourceTree = "<group>"; };
 		59F01562878A8D228E92EA45CE5E73B1 /* RAMRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMRouter-prefix.pch"; sourceTree = "<group>"; };
+		5A3995941F796943179654DF241A172A /* libRAMRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRAMRouter.a; path = libRAMRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCE03C6A8337F77E1192026F21A40AE /* Pods-QJYRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QJYRouter-dummy.m"; sourceTree = "<group>"; };
 		60E4C29A393A87182D1C632B18265AA8 /* Pods-QJYRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QJYRouter.debug.xcconfig"; sourceTree = "<group>"; };
 		65786DED7ACC6AA6039C71D2B6E0F7DA /* RAMRouterCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMRouterCollection.m; path = RAMRouter/RAMCore/RAMRouterCollection.m; sourceTree = "<group>"; };
 		6C6FB61ED6B7A0A2635F21C082480D9D /* RAMRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMRouter.h; path = RAMRouter/RAMCore/RAMRouter.h; sourceTree = "<group>"; };
 		72857C460C8946416362A661AACEFE4F /* Pods-QJYRouter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QJYRouter-acknowledgements.markdown"; sourceTree = "<group>"; };
 		74856ABC1B6C21804B9AA71755677780 /* RAMRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMRouter.xcconfig; sourceTree = "<group>"; };
-		78600E07EFB98CF38A966F77E01C77E8 /* libRAMRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRAMRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D86E84E142653CEBF70E578EF23872 /* r3_gvc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = r3_gvc.h; sourceTree = "<group>"; };
 		7B92C41C15330119F143A147DB37AC4F /* list.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = list.m; path = RAMRouter/RAMR3/list.m; sourceTree = "<group>"; };
 		7F56337D956F79BB6C69CCB16284FDDE /* slug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = slug.h; path = RAMRouter/RAMR3/slug.h; sourceTree = "<group>"; };
 		83E963E6556C90B4482923A157818FD7 /* UIViewController+RAMUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RAMUtils.h"; path = "RAMRouter/RAMCore/UIViewController+RAMUtils.h"; sourceTree = "<group>"; };
 		86F8183FACF5BF86EF12768B675AF054 /* Pods-QJYRouter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QJYRouter-frameworks.sh"; sourceTree = "<group>"; };
 		92EAAE2E1F35952B302D78EF0BA4C2CE /* Pods-QJYRouter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QJYRouter-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9474D777F802AA144EB347A293515384 /* RAMRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = RAMRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9474D777F802AA144EB347A293515384 /* RAMRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = RAMRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98409E957B05C05731C999823FD70D94 /* r3_define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = r3_define.h; sourceTree = "<group>"; };
 		98F12867EE55979834F0468EAA4B95A5 /* r3_list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = r3_list.h; sourceTree = "<group>"; };
 		99326C55006B302FB0A6139375A6B6A4 /* RAMRouterConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMRouterConfig.m; path = RAMRouter/RAMCore/RAMRouterConfig.m; sourceTree = "<group>"; };
-		99A8F01245F6FEBA7A578AE9EB50CB93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		99A8F01245F6FEBA7A578AE9EB50CB93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9B0A48F48708CE1EA6203F6DADB4CFDD /* RAMAdditionalLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMAdditionalLogger.h; path = RAMUtil/RAMLog/RAMAdditionalLogger.h; sourceTree = "<group>"; };
 		9E9F9834830FF8E17E73655F7E84B370 /* UIViewController+RAMUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RAMUtils.m"; path = "RAMRouter/RAMCore/UIViewController+RAMUtils.m"; sourceTree = "<group>"; };
 		A147653877C8538F6E723A3A94561E6E /* token.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = token.m; path = RAMRouter/RAMR3/token.m; sourceTree = "<group>"; };
-		AC69985787F7D847C5BBC427DD8F7749 /* libPods-QJYRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QJYRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01BD1285FB4B71FF636EF1A1939AD24 /* Pods-QJYRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QJYRouter.release.xcconfig"; sourceTree = "<group>"; };
 		B985DE24BD5AE44BD82AEB2E2D0B3AA6 /* RAMNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMNavigationController.h; path = RAMRouter/RAMController/RAMNavigationController.h; sourceTree = "<group>"; };
 		BFA8F4D2BFD59DDD4F3B71ADBCD96810 /* RAMRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMRouter.m; path = RAMRouter/RAMCore/RAMRouter.m; sourceTree = "<group>"; };
+		C183A584637B83DCACD9FA963F8015D9 /* RAMUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMUtil-dummy.m"; sourceTree = "<group>"; };
+		C35EE93696CE0574355DFF50F276FCDF /* RAMUtil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMUtil.xcconfig; sourceTree = "<group>"; };
 		CCF041414029E27EFD457F03BA499B08 /* r3_json.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = r3_json.h; sourceTree = "<group>"; };
 		D66CE1781E26373D2DD71F9CB99BD792 /* r3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = r3.h; sourceTree = "<group>"; };
+		E0FE4F687EC57EBD80A75C96592F1B34 /* RAMUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMUtil-prefix.pch"; sourceTree = "<group>"; };
 		E1B8AFB0F82EC025DEA2F3D3E7CE6400 /* RAMRouterConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMRouterConfig.h; path = RAMRouter/RAMCore/RAMRouterConfig.h; sourceTree = "<group>"; };
 		E541D91E55668D0B140CE213A295D1F0 /* Pods-QJYRouter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QJYRouter-resources.sh"; sourceTree = "<group>"; };
+		EED669FCFAFB18E17755D9C3F1D13980 /* RAMAdditionalLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMAdditionalLogger.m; path = RAMUtil/RAMLog/RAMAdditionalLogger.m; sourceTree = "<group>"; };
 		F472054EF094F821DB35B6F9104B06B2 /* RAMRouterR3PathMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAMRouterR3PathMatcher.m; path = RAMRouter/RAMCore/RAMRouterR3PathMatcher.m; sourceTree = "<group>"; };
 		F4BC251334BD8D002D179F9B13A41FD6 /* RAMRouterCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAMRouterCollection.h; path = RAMRouter/RAMCore/RAMRouterCollection.h; sourceTree = "<group>"; };
 		F6B2FAD7DA11185E5A4242D3B03A70C3 /* match_entry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = match_entry.m; path = RAMRouter/RAMR3/match_entry.m; sourceTree = "<group>"; };
@@ -109,14 +132,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4D2C09D7430188BB1D7F0856E0D364CF /* Frameworks */ = {
+		18049CC7C3AC6A59F1274B30145D034A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C96F473E4C13CB351288318411BC0C1B /* Frameworks */ = {
+		CE4B61A0D9E71D39695E942FBD737050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2C2EA7182B67697F0325B0B0AC801B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -144,13 +174,13 @@
 			path = "Demo/Pods/Target Support Files/RAMRouter";
 			sourceTree = "<group>";
 		};
-		23A672CB066BC22CB578AAFBF6892742 /* Products */ = {
+		1A9D74052FFEA346BEC7E7D8DF28C697 /* RAMLog */ = {
 			isa = PBXGroup;
 			children = (
-				AC69985787F7D847C5BBC427DD8F7749 /* libPods-QJYRouter.a */,
-				78600E07EFB98CF38A966F77E01C77E8 /* libRAMRouter.a */,
+				9B0A48F48708CE1EA6203F6DADB4CFDD /* RAMAdditionalLogger.h */,
+				EED669FCFAFB18E17755D9C3F1D13980 /* RAMAdditionalLogger.m */,
 			);
-			name = Products;
+			name = RAMLog;
 			sourceTree = "<group>";
 		};
 		3D7568583678C9B74824C626BE8FB705 /* RAMController */ = {
@@ -182,15 +212,34 @@
 			name = RAMR3;
 			sourceTree = "<group>";
 		};
+		6EDE055E33C1C491906381D0C2CE2D8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E72367D05F83167D844DC5F6AFF2D692 /* RAMUtil */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				B3F165E42230FF1004602318C321072B /* Development Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				23A672CB066BC22CB578AAFBF6892742 /* Products */,
+				6EDE055E33C1C491906381D0C2CE2D8F /* Pods */,
+				838ECA32AD9045BCC22A26FF949B38A4 /* Products */,
 				F138E8AD1095E538E3F611609116399E /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		838ECA32AD9045BCC22A26FF949B38A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D4F9A743FC4201BE082B580DAAA6DD5 /* libPods-QJYRouter.a */,
+				5A3995941F796943179654DF241A172A /* libRAMRouter.a */,
+				3D882C5E6059658A0A25724F6A66C9FC /* libRAMUtil.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		85B3FF320FD0F91CB7957F2A8F3DE2E0 /* Pod */ = {
@@ -274,6 +323,27 @@
 			name = RAMCore;
 			sourceTree = "<group>";
 		};
+		D49C0CC8B393EA38F31F48D6D83584EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C35EE93696CE0574355DFF50F276FCDF /* RAMUtil.xcconfig */,
+				C183A584637B83DCACD9FA963F8015D9 /* RAMUtil-dummy.m */,
+				E0FE4F687EC57EBD80A75C96592F1B34 /* RAMUtil-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RAMUtil";
+			sourceTree = "<group>";
+		};
+		E72367D05F83167D844DC5F6AFF2D692 /* RAMUtil */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D74052FFEA346BEC7E7D8DF28C697 /* RAMLog */,
+				D49C0CC8B393EA38F31F48D6D83584EF /* Support Files */,
+			);
+			name = RAMUtil;
+			path = RAMUtil;
+			sourceTree = "<group>";
+		};
 		F138E8AD1095E538E3F611609116399E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,66 +355,93 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A1120B9CB93B9EC2A8961C0E71A6D187 /* Headers */ = {
+		23631015347E7FC91A2FD44B82E3E016 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEECB94281BB76A65573BC6291CDBFF2 /* r3.h in Headers */,
-				40FC277E68A06FC8B6C28DA7E1523604 /* r3_define.h in Headers */,
-				48DFDCAD17DDAA1E669E3F21F02AEA4E /* r3_gvc.h in Headers */,
-				0692F4C43F1B0A367D0E3D9C36367A44 /* r3_json.h in Headers */,
-				10B9DA63C2AF9D5F0609CD0FEF9F09FD /* r3_list.h in Headers */,
-				D73D4B628DE06CED088869247D33FDBD /* r3_str.h in Headers */,
-				1158EC4AA23D7EA52CBD490C33F0CBA5 /* RAMContainerViewController.h in Headers */,
-				157CD213EAEC3FF793E5A4D7113A64BD /* RAMNavigationController.h in Headers */,
-				CAE81681698E043FB177767A580C0B29 /* RAMRouter.h in Headers */,
-				1B6F18216A52D0BFBB47A4751DB855AA /* RAMRouterCollection.h in Headers */,
-				3A373668520BDFA049D13AC5FB6D805D /* RAMRouterConfig.h in Headers */,
-				A8294FCE6DDCCFB12FD52D4157723CE7 /* RAMRouterHeader.h in Headers */,
-				A9655F44B24E0CD0523C4116D3B680BE /* RAMRouterParam.h in Headers */,
-				4F4019FE8566ED32B44CD687D75F6763 /* RAMRouterR3PathMatcher.h in Headers */,
-				69C71DC7CC36C90A32C3EDC03C464E82 /* slug.h in Headers */,
-				EDD663DB7F8C47B456B88AA9B908C501 /* str_array.h in Headers */,
-				D26881310E3D9A36A9A8DDC55AED8BC5 /* UIViewController+RAMUtils.h in Headers */,
-				FA116BF2FC0ACA043B40AFAA11D8B4D1 /* zmalloc.h in Headers */,
+				DFB78E5E2B8382D0F4041A5E67FED9DD /* RAMAdditionalLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE11ABAF8ECCBAAC0B95823C8CD0E9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976D2CCFD2EE51FE1990B9132993D5FC /* r3.h in Headers */,
+				4513116B519F47717D9C98DEF93AB2E3 /* r3_define.h in Headers */,
+				686026BEC15F7394D8B869AD85B163F9 /* r3_gvc.h in Headers */,
+				47F42303648D5AC27752DE81049C6FC1 /* r3_json.h in Headers */,
+				B960D9F55AD4E44F8775E4A5B68B5E4F /* r3_list.h in Headers */,
+				398CC4120C69E33C165B4671F6F4A64D /* r3_str.h in Headers */,
+				5D557AEA12ED16C450748F66864097E3 /* RAMContainerViewController.h in Headers */,
+				D83BFEC7D48B24D406DD65A915092365 /* RAMNavigationController.h in Headers */,
+				BBEC953ACED1213F449CB779339F2E49 /* RAMRouter.h in Headers */,
+				515F14141E82BF0BCC9E8E4A5539743E /* RAMRouterCollection.h in Headers */,
+				EAD64D028DA9F0401065D489D62E3D5F /* RAMRouterConfig.h in Headers */,
+				E9064C8B30FC6AEAF6032801D3312299 /* RAMRouterHeader.h in Headers */,
+				277FCE37D54D75E4738987A4AF150DFD /* RAMRouterParam.h in Headers */,
+				51750BC9EA8E4F58AF65708CACCC2068 /* RAMRouterR3PathMatcher.h in Headers */,
+				A6D81A929E9B88CE7A55EC7178D2186F /* slug.h in Headers */,
+				22B210AE634C39207F843C2CC54F3DA5 /* str_array.h in Headers */,
+				D639BD5AE4133112149F3CE5628249BA /* UIViewController+RAMUtils.h in Headers */,
+				CF766892690DF9D19BA03A9835A41FAF /* zmalloc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		95E903EFEB4536BF3C9A4898FBE8FA9A /* Pods-QJYRouter */ = {
+		1A6393DDCEAA02D06EE6C02733BAE9A9 /* RAMRouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE2F3E1CE2CA1FEB06CB9D01D2A14D26 /* Build configuration list for PBXNativeTarget "Pods-QJYRouter" */;
+			buildConfigurationList = 9A85212B7908BEE87DCF70A47887DA29 /* Build configuration list for PBXNativeTarget "RAMRouter" */;
 			buildPhases = (
-				1918FCA7F5FD9B8469F5376D64A03D6E /* Sources */,
-				C96F473E4C13CB351288318411BC0C1B /* Frameworks */,
+				1634659FB19C95DB70C4C2F96C9A4F99 /* Sources */,
+				CE4B61A0D9E71D39695E942FBD737050 /* Frameworks */,
+				9CE11ABAF8ECCBAAC0B95823C8CD0E9D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1CC17E64574AEA20818C25D6EC35ACD4 /* PBXTargetDependency */,
-			);
-			name = "Pods-QJYRouter";
-			productName = "Pods-QJYRouter";
-			productReference = AC69985787F7D847C5BBC427DD8F7749 /* libPods-QJYRouter.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E5552CAE115BC29AAA6A1EE48468A0C6 /* RAMRouter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F02ABE9D76BFE76DCB948E2C41F304E2 /* Build configuration list for PBXNativeTarget "RAMRouter" */;
-			buildPhases = (
-				48366D2308F22803AC812D3369CB066F /* Sources */,
-				4D2C09D7430188BB1D7F0856E0D364CF /* Frameworks */,
-				A1120B9CB93B9EC2A8961C0E71A6D187 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
+				E815F34BFD5DAB1D4CB78FB2630B02F2 /* PBXTargetDependency */,
 			);
 			name = RAMRouter;
 			productName = RAMRouter;
-			productReference = 78600E07EFB98CF38A966F77E01C77E8 /* libRAMRouter.a */;
+			productReference = 5A3995941F796943179654DF241A172A /* libRAMRouter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3CCDFA58F62CFB2EE5E2AB8A53854181 /* Pods-QJYRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60FF346589CE16876FDD2AAC371D833C /* Build configuration list for PBXNativeTarget "Pods-QJYRouter" */;
+			buildPhases = (
+				03D547DB57320AB09171D217649DADEA /* Sources */,
+				18049CC7C3AC6A59F1274B30145D034A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6263DFDE82BC740F9A7F1E065EE22AE /* PBXTargetDependency */,
+				66276CD5B4D7AB756A9B6127BB08FCAC /* PBXTargetDependency */,
+			);
+			name = "Pods-QJYRouter";
+			productName = "Pods-QJYRouter";
+			productReference = 4D4F9A743FC4201BE082B580DAAA6DD5 /* libPods-QJYRouter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C6C1A0C5B0E22AB2A428A30B40365733 /* RAMUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E9D30A96F07E8C8340F91F0A4BF2477 /* Build configuration list for PBXNativeTarget "RAMUtil" */;
+			buildPhases = (
+				99C31501346CD4CDDEF215D118F89590 /* Sources */,
+				FD2C2EA7182B67697F0325B0B0AC801B /* Frameworks */,
+				23631015347E7FC91A2FD44B82E3E016 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAMUtil;
+			productName = RAMUtil;
+			productReference = 3D882C5E6059658A0A25724F6A66C9FC /* libRAMUtil.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -364,106 +461,83 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 23A672CB066BC22CB578AAFBF6892742 /* Products */;
+			productRefGroup = 838ECA32AD9045BCC22A26FF949B38A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95E903EFEB4536BF3C9A4898FBE8FA9A /* Pods-QJYRouter */,
-				E5552CAE115BC29AAA6A1EE48468A0C6 /* RAMRouter */,
+				3CCDFA58F62CFB2EE5E2AB8A53854181 /* Pods-QJYRouter */,
+				1A6393DDCEAA02D06EE6C02733BAE9A9 /* RAMRouter */,
+				C6C1A0C5B0E22AB2A428A30B40365733 /* RAMUtil */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1918FCA7F5FD9B8469F5376D64A03D6E /* Sources */ = {
+		03D547DB57320AB09171D217649DADEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA1D9F817E834FA0E36A788F6A5EB1D /* Pods-QJYRouter-dummy.m in Sources */,
+				C2E958B00C9037FAFC19ECC65F2977A2 /* Pods-QJYRouter-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48366D2308F22803AC812D3369CB066F /* Sources */ = {
+		1634659FB19C95DB70C4C2F96C9A4F99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78BB5B0A600C2B2D0A6799DB49362331 /* edge.m in Sources */,
-				6677A0FDE28E39BF5BB8ADA2B761B003 /* list.m in Sources */,
-				CAB92F53915F2B0D73E0819861D9EA34 /* match_entry.m in Sources */,
-				A8F39F2BCCA5BFE16B4A600D2BE708E0 /* node.m in Sources */,
-				B8D4EC1CD500C946863DB70E4F07C554 /* RAMContainerViewController.m in Sources */,
-				74BF325C359ABF977112022564AA671C /* RAMNavigationController.m in Sources */,
-				17A2E8EB88A0DAF63D1C765174299692 /* RAMRouter-dummy.m in Sources */,
-				EFF79834577E79C5F6ED923E1E9D31A5 /* RAMRouter.m in Sources */,
-				F4D6095CDBD167C2F9D66F34484F6E6F /* RAMRouterCollection.m in Sources */,
-				808B4C8D6562E04131459F03F4BECAB7 /* RAMRouterConfig.m in Sources */,
-				E57E6B21EC59191C4A60AF0B72CE5E57 /* RAMRouterParam.m in Sources */,
-				2F8AD97EB0D4A395FB6D094C4E86BB52 /* RAMRouterR3PathMatcher.m in Sources */,
-				9AF49F3E53FC79EE0859A86374452D65 /* slug.m in Sources */,
-				5E0DB07FA8A5A8A16CA6128C496CFE25 /* str.m in Sources */,
-				2FAB139F7D5A0DF4B59B8CC25AD3F394 /* token.m in Sources */,
-				7752E1337C50E54896C5C50F46C9E5F1 /* UIViewController+RAMUtils.m in Sources */,
-				09B01031CFAC77563427519D87D45DBD /* zmalloc.c in Sources */,
+				C131EA83781CB5AFA5FE85A8A1DA0A29 /* edge.m in Sources */,
+				13DD8916A54FD0E3B180944AEB77482C /* list.m in Sources */,
+				104B1701F934B791F1CBF138A922ED53 /* match_entry.m in Sources */,
+				D65262E2487452A0BEEE89DFB70E8201 /* node.m in Sources */,
+				1968BB36E4510E7F99ABC402640414A5 /* RAMContainerViewController.m in Sources */,
+				225C91033FDD421D6457DACEAF95E676 /* RAMNavigationController.m in Sources */,
+				B62FB21472CA4C4A383436E0244373C3 /* RAMRouter-dummy.m in Sources */,
+				6BA87BD4426E8736F04F5D51C1C8A8A6 /* RAMRouter.m in Sources */,
+				7EF42B6881A2CE29DA30CABD7A2D6D09 /* RAMRouterCollection.m in Sources */,
+				58CFDDC0BD68655D6F379922F93E971B /* RAMRouterConfig.m in Sources */,
+				7C887548E2CF06029F68BEA0D57ABE8E /* RAMRouterParam.m in Sources */,
+				FF0AE15A5B3DCA5C6C8A7E3D526AC094 /* RAMRouterR3PathMatcher.m in Sources */,
+				155C081CCC06E13F9112CDAA4BCE7404 /* slug.m in Sources */,
+				70DC278EEC9499183DA82409CC91CFA9 /* str.m in Sources */,
+				E54F6E8C13CFA9E88B35A66338B849EC /* token.m in Sources */,
+				584B9FF9AAFA4B709F47513EF73D22F1 /* UIViewController+RAMUtils.m in Sources */,
+				E215896BFD9680D976319FD8F4425F71 /* zmalloc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C31501346CD4CDDEF215D118F89590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB219804130A5A83DACB80003EB3FAD /* RAMAdditionalLogger.m in Sources */,
+				935EBDCB4289E23FAC208B2109804EE7 /* RAMUtil-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1CC17E64574AEA20818C25D6EC35ACD4 /* PBXTargetDependency */ = {
+		66276CD5B4D7AB756A9B6127BB08FCAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMUtil;
+			target = C6C1A0C5B0E22AB2A428A30B40365733 /* RAMUtil */;
+			targetProxy = CB674B099189B6C8C05604D7DB95F1A0 /* PBXContainerItemProxy */;
+		};
+		B6263DFDE82BC740F9A7F1E065EE22AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RAMRouter;
-			target = E5552CAE115BC29AAA6A1EE48468A0C6 /* RAMRouter */;
-			targetProxy = 43FC01296BEDBA346485B0A077C85134 /* PBXContainerItemProxy */;
+			target = 1A6393DDCEAA02D06EE6C02733BAE9A9 /* RAMRouter */;
+			targetProxy = A92C946D7FC6CD05E59B2795AA628B1E /* PBXContainerItemProxy */;
+		};
+		E815F34BFD5DAB1D4CB78FB2630B02F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMUtil;
+			target = C6C1A0C5B0E22AB2A428A30B40365733 /* RAMUtil */;
+			targetProxy = 40CE72FE0D6A8D0C25D60D40F542100B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		036BB311734CC7B57638C64D4C84B57D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74856ABC1B6C21804B9AA71755677780 /* RAMRouter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RAMRouter/RAMRouter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RAMRouter;
-				PRODUCT_NAME = RAMRouter;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1DEADFBBEE9599553CD93A443C5DE0A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B01BD1285FB4B71FF636EF1A1939AD24 /* Pods-QJYRouter.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -527,7 +601,52 @@
 			};
 			name = Debug;
 		};
-		3D57C977C18567D3DE2C506932EC6220 /* Release */ = {
+		45E7DB4D1E4A260783C9F9DE4D44A481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B01BD1285FB4B71FF636EF1A1939AD24 /* Pods-QJYRouter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		765F769A77A910A98CAAD64F4A585A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35EE93696CE0574355DFF50F276FCDF /* RAMUtil.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMUtil/RAMUtil-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RAMUtil;
+				PRODUCT_NAME = RAMUtil;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9042F7D491DCD196364A6639945B1560 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74856ABC1B6C21804B9AA71755677780 /* RAMRouter.xcconfig */;
 			buildSettings = {
@@ -551,7 +670,54 @@
 			};
 			name = Release;
 		};
-		E89F2DDE0217F50636DECF844B4DD515 /* Debug */ = {
+		A04F3460F692AFD3DE1AB14895F82AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35EE93696CE0574355DFF50F276FCDF /* RAMUtil.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMUtil/RAMUtil-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RAMUtil;
+				PRODUCT_NAME = RAMUtil;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB5D34368F2752DEFB0E9BDFB49A8E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74856ABC1B6C21804B9AA71755677780 /* RAMRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMRouter/RAMRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RAMRouter;
+				PRODUCT_NAME = RAMRouter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F125288EE619B55CE81FBD13C5E37D2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60E4C29A393A87182D1C632B18265AA8 /* Pods-QJYRouter.debug.xcconfig */;
 			buildSettings = {
@@ -642,20 +808,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F02ABE9D76BFE76DCB948E2C41F304E2 /* Build configuration list for PBXNativeTarget "RAMRouter" */ = {
+		3E9D30A96F07E8C8340F91F0A4BF2477 /* Build configuration list for PBXNativeTarget "RAMUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				036BB311734CC7B57638C64D4C84B57D /* Debug */,
-				3D57C977C18567D3DE2C506932EC6220 /* Release */,
+				765F769A77A910A98CAAD64F4A585A6B /* Debug */,
+				A04F3460F692AFD3DE1AB14895F82AA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE2F3E1CE2CA1FEB06CB9D01D2A14D26 /* Build configuration list for PBXNativeTarget "Pods-QJYRouter" */ = {
+		60FF346589CE16876FDD2AAC371D833C /* Build configuration list for PBXNativeTarget "Pods-QJYRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E89F2DDE0217F50636DECF844B4DD515 /* Debug */,
-				1DEADFBBEE9599553CD93A443C5DE0A2 /* Release */,
+				F125288EE619B55CE81FBD13C5E37D2E /* Debug */,
+				45E7DB4D1E4A260783C9F9DE4D44A481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A85212B7908BEE87DCF70A47887DA29 /* Build configuration list for PBXNativeTarget "RAMRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5D34368F2752DEFB0E9BDFB49A8E4B /* Debug */,
+				9042F7D491DCD196364A6639945B1560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
