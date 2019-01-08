@@ -1,6 +1,6 @@
 {
   "name": "RAMRouter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "This is a good iOS Router",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/RamboQiu/RAMRouter.git",
@@ -13,17 +13,35 @@
   },
   "source": {
     "git": "https://github.com/RamboQiu/RAMRouter.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "default_subspecs": [
+    "RAMR3",
+    "RAMController",
+    "RAMCore"
+  ],
   "dependencies": {
     "RAMUtil/RAMLog": [
 
     ]
   },
   "subspecs": [
+    {
+      "name": "RAMCore",
+      "source_files": "RAMRouter/RAMCore/*.{h,m}",
+      "public_header_files": "RAMRouter/RAMCore/*.h",
+      "dependencies": {
+        "RAMRouter/RAMController": [
+
+        ],
+        "RAMRouter/RAMR3": [
+
+        ]
+      }
+    },
     {
       "name": "RAMR3",
       "source_files": [
@@ -34,12 +52,9 @@
       "requires_arc": false
     },
     {
-      "name": "RAMCore",
-      "source_files": "RAMRouter/RAMCore/*.{h,m}"
-    },
-    {
       "name": "RAMController",
-      "source_files": "RAMRouter/RAMController/*.{h,m}"
+      "source_files": "RAMRouter/RAMController/*.{h,m}",
+      "public_header_files": "RAMRouter/RAMController/*.h"
     }
   ]
 }

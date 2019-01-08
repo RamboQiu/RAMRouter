@@ -1,1 +1,1 @@
-../../../../../RAMRouter/RAMCore/RAMRouterConfig.h
+../../../RAMRouter/RAMRouter/RAMCore/RAMRouterConfig.h
