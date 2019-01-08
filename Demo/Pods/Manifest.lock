@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "/Users/qiujunyun/Documents/WorkSpace/github/RAMRouter"
 
 SPEC CHECKSUMS:
-  RAMRouter: 5dcd25803c5bdceadd6b777daee8d9e35f246469
+  RAMRouter: 2da39d6f9afad782f7c32d1a4d2d805d62aba740
   RAMUtil: a964c4fa1802f56e761cdb57bccaf881be0959ae
 
 PODFILE CHECKSUM: c384d729ab606266b4e2e7a3ee611f57f65c7ed8

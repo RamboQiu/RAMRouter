@@ -18,11 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "default_subspecs": [
-    "RAMR3",
-    "RAMController",
-    "RAMCore"
-  ],
   "dependencies": {
     "RAMUtil/RAMLog": [
 
@@ -39,14 +34,12 @@
       "requires_arc": false
     },
     {
-      "name": "RAMController",
-      "source_files": "RAMRouter/RAMController/*.{h,m}",
-      "public_header_files": "RAMRouter/RAMController/*.h"
+      "name": "RAMCore",
+      "source_files": "RAMRouter/RAMCore/*.{h,m}"
     },
     {
-      "name": "RAMCore",
-      "source_files": "RAMRouter/RAMCore/*.{h,m}",
-      "public_header_files": "RAMRouter/RAMCore/*.h"
+      "name": "RAMController",
+      "source_files": "RAMRouter/RAMController/*.{h,m}"
     }
   ]
 }

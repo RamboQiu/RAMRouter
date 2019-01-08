@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RAMRouter'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'This is a good iOS Router'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -15,6 +15,13 @@ TODO: Add long description of the pod here.
   s.default_subspec = 'RAMR3','RAMController','RAMCore'
   s.dependency 'RAMUtil/RAMLog'
 
+  s.subspec 'RAMCore' do |cs|
+    cs.source_files = "RAMRouter/RAMCore/*.{h,m}"
+    cs.public_header_files = "RAMRouter/RAMCore/*.h"
+    cs.dependency 'RAMRouter/RAMController'
+    cs.dependency 'RAMRouter/RAMR3'
+  end
+
   s.subspec 'RAMR3' do |rs|
     rs.source_files  = "RAMRouter/RAMR3/*.{h,m}",\
                        "RAMRouter/RAMR3/include/*.h",\
@@ -26,11 +33,6 @@ TODO: Add long description of the pod here.
   s.subspec 'RAMController' do |ls|
     ls.source_files = "RAMRouter/RAMController/*.{h,m}"
     ls.public_header_files = "RAMRouter/RAMController/*.h"
-  end
-
-  s.subspec 'RAMCore' do |cs|
-    cs.source_files = "RAMRouter/RAMCore/*.{h,m}"
-    cs.public_header_files = "RAMRouter/RAMCore/*.h"
   end
 
 end

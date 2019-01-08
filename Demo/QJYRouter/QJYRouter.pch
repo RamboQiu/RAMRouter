@@ -10,5 +10,6 @@
 #define QJYRouter_pch
 
 #import <RAMRouter/RAMRouter.h>
+#import <RAMRouter/RAMContainerViewController.h>
 
 #endif /* QJYRouter_pch */

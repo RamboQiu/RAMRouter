@@ -9,7 +9,6 @@
 #import "RAMRouterConfig.h"
 #import "RAMRouterParam.h"
 #import "RAMRouterHeader.h"
-#import "RAMContainerViewController.h"
 
 /// 每个注册进router的controller，都需要实现该接口
 @protocol RAMRouteTargetProtocol <NSObject>

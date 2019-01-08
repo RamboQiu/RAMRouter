@@ -168,7 +168,7 @@ const char * r3_slug_find_name(const char *s1, int *len) {
 
 
 /**
- * @param char * sep separator
+ * @param char * str separator
  */
 char * r3_slug_compile(const char * str, int len)
 {

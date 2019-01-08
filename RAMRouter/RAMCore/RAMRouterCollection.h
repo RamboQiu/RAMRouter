@@ -13,4 +13,4 @@
  *
  *  @return 类的数组
  */
-NSArray *RAMExportedMethodsByModuleID();
+NSArray *RAMExportedMethodsByModuleID(void);
