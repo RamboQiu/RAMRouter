@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RAMRouter'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'This is a good iOS Router'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -26,8 +26,8 @@ TODO: Add long description of the pod here.
     rs.source_files  = "RAMRouter/RAMR3/*.{h,m}",\
                        "RAMRouter/RAMR3/include/*.h",\
                        "RAMRouter/RAMR3/zmalloc.{c,h}"
-    # rs.public_header_files = "RAMRouter/RAMR3/include/*.h"
     rs.requires_arc = false
+    rs.public_header_files = "RAMRouter/RAMR3/include/*.h"
   end
 
   s.subspec 'RAMController' do |ls|
