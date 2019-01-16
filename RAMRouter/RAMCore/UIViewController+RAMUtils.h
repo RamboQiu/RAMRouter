@@ -36,4 +36,9 @@
  *  @return navigation controller
  */
 - (UINavigationController *)ram_innerMostNavigationControllerWithNavigationBarHidden:(BOOL)bHidden;
+
+/*!
+ *  使用了RAMContainerViewController或者RAMControllerRouter的ViewController可以使用ram_back来实现后退页面的统一功能
+ */
+- (void)ram_back;
 @end

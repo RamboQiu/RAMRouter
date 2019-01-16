@@ -118,6 +118,7 @@
 				355450762181B19F00EA9287 /* Sources */,
 				355450772181B19F00EA9287 /* Frameworks */,
 				355450782181B19F00EA9287 /* Resources */,
+				D25249D27A8747DB1F87901B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,6 +175,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D25249D27A8747DB1F87901B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QJYRouter/Pods-QJYRouter-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RAMRouter/RAMRouter.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RAMRouter.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QJYRouter/Pods-QJYRouter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F7D6737F161215044BCFECFA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

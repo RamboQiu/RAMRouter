@@ -1,21 +1,31 @@
 PODS:
-  - RAMRouter (1.0.1):
-    - RAMRouter/RAMController (= 1.0.1)
-    - RAMRouter/RAMCore (= 1.0.1)
-    - RAMRouter/RAMR3 (= 1.0.1)
+  - RAMRouter (1.0.2):
+    - RAMRouter/RAMController (= 1.0.2)
+    - RAMRouter/RAMCore (= 1.0.2)
+    - RAMRouter/RAMR3 (= 1.0.2)
+    - RAMUtil/RAMColor
+    - RAMUtil/RAMImage
     - RAMUtil/RAMLog
-  - RAMRouter/RAMController (1.0.1):
+  - RAMRouter/RAMController (1.0.2):
+    - RAMUtil/RAMColor
+    - RAMUtil/RAMImage
     - RAMUtil/RAMLog
-  - RAMRouter/RAMCore (1.0.1):
+  - RAMRouter/RAMCore (1.0.2):
     - RAMRouter/RAMController
     - RAMRouter/RAMR3
+    - RAMUtil/RAMColor
+    - RAMUtil/RAMImage
     - RAMUtil/RAMLog
-  - RAMRouter/RAMR3 (1.0.1):
+  - RAMRouter/RAMR3 (1.0.2):
+    - RAMUtil/RAMColor
+    - RAMUtil/RAMImage
     - RAMUtil/RAMLog
-  - RAMUtil/RAMLog (1.0.0)
+  - RAMUtil/RAMColor (1.0.1)
+  - RAMUtil/RAMImage (1.0.1)
+  - RAMUtil/RAMLog (1.0.1)
 
 DEPENDENCIES:
-  - RAMRouter (from `https://github.com/RamboQiu/RAMRouter.git`)
+  - RAMRouter (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -23,17 +33,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   RAMRouter:
-    :git: https://github.com/RamboQiu/RAMRouter.git
-
-CHECKOUT OPTIONS:
-  RAMRouter:
-    :commit: 63c262d2ed62952171ac22d40741e9d59ccb764f
-    :git: https://github.com/RamboQiu/RAMRouter.git
+    :path: "../"
 
 SPEC CHECKSUMS:
-  RAMRouter: 3e30981414fd21cbdf9647d83ea0011a2e96506e
-  RAMUtil: a964c4fa1802f56e761cdb57bccaf881be0959ae
+  RAMRouter: d9b183769d6c38c6c09de839e8d3e3aa81e76d3a
+  RAMUtil: b8884caa0c9e42fd3a8cc8b424bb5485be0ed72f
 
-PODFILE CHECKSUM: 7a65e0dd2e016083f5f243fd3138da8c83a1b559
+PODFILE CHECKSUM: efad84b0c14f8588145058eaa5a1ae0f98f46d18
 
 COCOAPODS: 1.5.3

@@ -6,6 +6,7 @@
 //
 
 #import "UIViewController+RAMUtils.h"
+#import "RAMContainerViewController.h"
 
 @implementation UIViewController (RAMUtils)
 
@@ -58,5 +59,27 @@
     }
     
     return foudController;
+}
+
+- (void)ram_back {
+    if (self.navigationController.viewControllers.count > 1){
+        [self.navigationController popViewControllerAnimated:YES];
+        return;
+    }
+    
+    if ([self conformsToProtocol:@protocol(RAMContainerViewControllerProtocol)]){
+        UINavigationController *containerNavigationController = [(id<RAMContainerViewControllerProtocol>)self containerController].navigationController;
+        if (containerNavigationController.viewControllers.count > 1){
+            [containerNavigationController popViewControllerAnimated:YES];
+            return;
+        }
+    }
+    
+    if (self.presentingViewController){
+        [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+        return;
+    }
 }
 @end

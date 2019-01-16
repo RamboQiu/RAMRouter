@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '8.0'
 target 'QJYRouter' do
-    pod 'RAMRouter', :git => 'https://github.com/RamboQiu/RAMRouter.git' #:path => '/Users/qiujunyun/Documents/WorkSpace/github/RAMRouter'#, :branch => 'dev'
+    pod 'RAMRouter', :path => '../'# :git => 'https://github.com/RamboQiu/RAMRouter.git'#, :branch => 'dev'
   	#pod 'RAMUtil', :git => 'https://github.com/RamboQiu/RAMUtil.git', :subspecs => ['RAMLog'], :tag => '1.0.0'
 end
 
