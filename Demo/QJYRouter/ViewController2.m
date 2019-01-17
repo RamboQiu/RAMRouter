@@ -7,6 +7,7 @@
 //
 
 #import "ViewController2.h"
+#import <RAMRouter/UIViewController+RAMNavigationBar.h>
 
 @interface ViewController2 ()<
 RAMContainerViewControllerProtocol,
@@ -39,6 +40,7 @@ RAMRouteTargetProtocol
     self.title = @"viewcontroller2";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self ram_applyWhiteNavigationBarStyle];
     
     
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -47,6 +49,9 @@ RAMRouteTargetProtocol
     [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_button];
+    
+    UIButton *commitButton = [self ram_addRightItemWithTitle:@"提交"];
+    [commitButton addTarget:self action:@selector(commit:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,6 +65,10 @@ RAMRouteTargetProtocol
     param.launchMode = RAMControllerLaunchModePushNavigation;
     param.params = @{@"paramKey":@"viewcontroller2"};
     [[RAMRouter sharedRouter] route:param];
+}
+
+- (void)commit:(id)sender {
+    NSLog(@"提交done");
 }
 
 @end

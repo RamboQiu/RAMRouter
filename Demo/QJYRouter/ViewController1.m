@@ -7,6 +7,7 @@
 //
 
 #import "ViewController1.h"
+#import <RAMRouter/UIViewController+RAMNavigationBar.h>
 
 @interface ViewController1 () <
 RAMContainerViewControllerProtocol,
@@ -36,6 +37,7 @@ RAMRouteTargetProtocol
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self ram_applyClearNavigationBarStyle];
     // Do any additional setup after loading the view.
     self.title = @"viewcontroller1";
     self.view.backgroundColor = [UIColor whiteColor];

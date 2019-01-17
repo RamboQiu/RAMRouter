@@ -10,7 +10,7 @@
 #import <RAMUtil/UIImage+RAMColor.h>
 
 @implementation UINavigationBar (RAMUtil)
-- (void)setDefaultBottomLine {
+- (void)ram_setDefaultBottomLine {
     [self setShadowImage:[UIImage imageWithColor:[UIColor colorWithHexString:@"0xD9D9D9" alpha:1] pixSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 1)]];
 }
 
@@ -19,8 +19,7 @@
     return (UIView*)self.subviews.firstObject;
 }
 
-- (void)ram_setBackgroundColor:(UIColor*)color
-{
+- (void)ram_setBackgroundColor:(UIColor*)color {
     //这里必须设置为透明的图，设置为nil也不起作用
     [self setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithRed:color.red green:color.green blue:color.blue alpha:color.alpha * 0.99] size:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
     
@@ -29,7 +28,6 @@
 }
 
 #pragma mark - shadow view
-
 - (void)ram_hideShadowImage:(BOOL)bHidden {
     UIView *bgView = [self ram_getBackgroundView];
     for (UIView *lineView in bgView.subviews) {

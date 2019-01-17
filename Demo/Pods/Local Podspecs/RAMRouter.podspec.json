@@ -37,6 +37,9 @@
     ],
     "RAMUtil/RAMImage": [
 
+    ],
+    "RAMUtil/RAMFrame": [
+
     ]
   },
   "subspecs": [

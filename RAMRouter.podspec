@@ -21,6 +21,7 @@ TODO: Add long description of the pod here.
   s.dependency 'RAMUtil/RAMLog'
   s.dependency 'RAMUtil/RAMColor'
   s.dependency 'RAMUtil/RAMImage'
+  s.dependency 'RAMUtil/RAMFrame'
 
   s.subspec 'RAMCore' do |cs|
     cs.source_files = "RAMRouter/RAMCore/*.{h,m}"
