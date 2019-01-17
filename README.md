@@ -35,10 +35,11 @@ param.params = @{@"paramKey":@"viewcontroller1"};
 安装
 ---
 ###	CocoaPods
-
 1. `pod 'RAMRouter' , :git=>'https://github.com/RamboQiu/RAMRouter.git'`
 2. `pod install`或`pod update`
 3. \#import "RAMRouter.h"
+
+> 注意podfile 不允许使用 use_frameworks! 会导致路由读取mach-o的getsectbynamefromheader和getsectdatafromheader方法失效
 	
 系统要求
 ---
