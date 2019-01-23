@@ -56,11 +56,13 @@ RAMRouteTargetProtocol
 }
 
 - (void)buttonAction:(id)sender {
-    RAMRouterParam *param = [[RAMRouterParam alloc] init];
-    param.url = @"router://viewcontroller2";
-    param.launchMode = RAMControllerLaunchModePushNavigation;
-    param.params = @{@"paramKey":@"viewcontroller1"};
-    [[RAMRouter sharedRouter] route:param];
+//    RAMRouterParam *param = [[RAMRouterParam alloc] init];
+//    param.url = @"router://viewcontroller2";
+//    param.launchMode = RAMControllerLaunchModePushNavigation;
+//    param.params = @{@"paramKey":@"viewcontroller1"};
+//    [[RAMRouter sharedRouter] route:param];
+    
+    [[RAMRouter sharedRouter] routeWithUrl:@"router://viewcontroller2?paramKey=value"];
 }
 
 @end

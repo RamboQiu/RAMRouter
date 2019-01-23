@@ -44,6 +44,8 @@
  */
 - (UIViewController*)route:(RAMRouterParam*)param;
 
+- (void)routeWithUrl:(NSString *)urlString;
+
 /// r3 dump 打印所有注册的Router url信息
 - (void)dumpRouter;
 

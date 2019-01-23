@@ -1,18 +1,18 @@
 PODS:
-  - RAMRouter (1.0.5):
-    - RAMRouter/RAMCore (= 1.0.5)
-    - RAMRouter/RAMR3 (= 1.0.5)
+  - RAMRouter (1.0.6):
+    - RAMRouter/RAMCore (= 1.0.6)
+    - RAMRouter/RAMR3 (= 1.0.6)
     - RAMUtil/RAMColor
     - RAMUtil/RAMFrame
     - RAMUtil/RAMImage
     - RAMUtil/RAMLog
-  - RAMRouter/RAMCore (1.0.5):
+  - RAMRouter/RAMCore (1.0.6):
     - RAMRouter/RAMR3
     - RAMUtil/RAMColor
     - RAMUtil/RAMFrame
     - RAMUtil/RAMImage
     - RAMUtil/RAMLog
-  - RAMRouter/RAMR3 (1.0.5):
+  - RAMRouter/RAMR3 (1.0.6):
     - RAMUtil/RAMColor
     - RAMUtil/RAMFrame
     - RAMUtil/RAMImage
@@ -34,7 +34,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RAMRouter: f307fe9fa862ccf8ea7083d347cb6c2dddd7ad74
+  RAMRouter: 15f4297e18c373748d6d1e360f0416a0693dcaff
   RAMUtil: ee934ab5d4ccb643b45471d694080274fe716e32
 
 PODFILE CHECKSUM: efad84b0c14f8588145058eaa5a1ae0f98f46d18

@@ -92,6 +92,38 @@
     }
 }
 
+- (void)routeWithUrl:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    RAMRouterParam *param = [[RAMRouterParam alloc] init];
+    param.url = [NSString stringWithFormat:@"%@://%@", url.scheme, url.host];;
+    param.launchMode = RAMControllerLaunchModePushNavigation;
+    param.params = [self stringToDic:urlString];
+    [[RAMRouter sharedRouter] route:param];
+}
+
+- (NSDictionary *)stringToDic:(NSString *)string {
+    NSURL *url = [NSURL URLWithString:string];
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    NSCharacterSet *delimiterSet = [NSCharacterSet characterSetWithCharactersInString:@"&"];
+    NSScanner *scanner = [[NSScanner alloc] initWithString:url.query];
+    while (![scanner isAtEnd])
+    {
+        NSString *pairString = nil;
+        [scanner scanUpToCharactersFromSet:delimiterSet intoString:&pairString];
+        [scanner scanCharactersFromSet:delimiterSet intoString:NULL];
+        NSArray *kvPair = [pairString componentsSeparatedByString:@"="];
+        if (kvPair.count == 2)
+        {
+            NSString *key = [[kvPair objectAtIndex:0] stringByRemovingPercentEncoding];
+            NSString *value = [[kvPair objectAtIndex:1] stringByRemovingPercentEncoding];
+            if (key != nil && value != nil) {
+                [dic setObject:value forKey:key];
+            }
+        }
+    }
+    return dic;
+}
+
 - (UIViewController *)route:(RAMRouterParam *)param {
     NSAssert(param.url.length > 0 , @"route url param error");
     
