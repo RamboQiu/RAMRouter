@@ -12,7 +12,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'RamboQiu' => '625217640@qq.com' }
   s.source           = { :git => 'https://github.com/RamboQiu/RAMRouter.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.default_subspec = 'RAMR3','RAMController','RAMCore'
+  s.default_subspec = 'RAMR3','RAMCore'
   
   s.resource_bundles = {
    'RAMRouter' => ['RAMRouter/Assets/*.png']
@@ -26,7 +26,6 @@ TODO: Add long description of the pod here.
   s.subspec 'RAMCore' do |cs|
     cs.source_files = "RAMRouter/RAMCore/*.{h,m}"
     cs.public_header_files = "RAMRouter/RAMCore/*.h"
-    cs.dependency 'RAMRouter/RAMController'
     cs.dependency 'RAMRouter/RAMR3'
   end
 
@@ -36,11 +35,6 @@ TODO: Add long description of the pod here.
                        "RAMRouter/RAMR3/zmalloc.{c,h}"
     rs.requires_arc = false
     rs.public_header_files = "RAMRouter/RAMR3/include/*.h"
-  end
-
-  s.subspec 'RAMController' do |ls|
-    ls.source_files = "RAMRouter/RAMController/*.{h,m}"
-    ls.public_header_files = "RAMRouter/RAMController/*.h"
   end
 
 end

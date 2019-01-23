@@ -1,1 +1,1 @@
-../../../../../RAMRouter/RAMController/UIViewController+RAMNavigationBar.h
+../../../../../RAMRouter/RAMCore/UIViewController+RAMNavigationBar.h

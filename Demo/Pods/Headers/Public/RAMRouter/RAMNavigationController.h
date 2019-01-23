@@ -1,1 +1,1 @@
-../../../../../RAMRouter/RAMController/RAMNavigationController.h
+../../../../../RAMRouter/RAMCore/RAMNavigationController.h
