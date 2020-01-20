@@ -20,7 +20,5 @@
 
 - (void)addUrlPath:(NSString*)url;
 
-- (NSArray*)urlMatchers;
-
 - (NSArray*)urls;
 @end

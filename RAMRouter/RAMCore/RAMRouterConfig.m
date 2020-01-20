@@ -8,8 +8,6 @@
 #import "RAMRouterConfig.h"
 
 @interface RAMRouterConfig()
-@property (nonatomic, strong) NSMutableArray *urlMatchers;
-
 @property (nonatomic, strong) NSMutableArray<NSString *> *urls;
 @end
 
@@ -18,7 +16,6 @@
 - (instancetype)initWithUrlPath:(NSString *)url {
     self = [super init];
     if (self) {
-        _urlMatchers = [NSMutableArray new];
         _urls = [NSMutableArray new];
         _launchMode = RAMControllerLaunchModePush;
         _singleInstanceShowMode = RAMControllerInstanceShowModeNOAction;

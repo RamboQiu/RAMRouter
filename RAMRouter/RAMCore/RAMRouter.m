@@ -9,7 +9,6 @@
 #import "RAMRouterCollection.h"
 #import "RAMRouterConfig.h"
 #import "RAMRouterParam.h"
-#import "RAMRouterR3PathMatcher.h"
 #import "UIViewController+RAMUtils.h"
 #import "RAMNavigationController.h"
 #import <RAMUtil/RAMAdditionalLogger.h>
@@ -18,11 +17,9 @@
 @interface RAMRouter()
 @property (nonatomic, strong) NSMutableArray<Class> *routeControllerClasses;
 
-@property (nonatomic, strong) NSMutableDictionary<NSString *, RAMRouterConfig *> *routeControllerInfos;
-
 @property (nonatomic, strong) Class navigationDelegateClass;
 
-@property (nonatomic, strong) RAMRouterR3PathMatcher *r3URLMatcher;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, RAMRouterConfig *> *urlMatcher;
 @end
 
 @implementation RAMRouter
@@ -46,15 +43,12 @@
 }
 
 - (void)loadAllRouterInfos {
-    _routeControllerInfos = [NSMutableDictionary new];
-    
     NSArray *classes = RAMExportedMethodsByModuleID();
     if (classes)
         _routeControllerClasses = [NSMutableArray arrayWithArray:classes];
     else
         _routeControllerClasses = [NSMutableArray new];
-    
-    _r3URLMatcher = [RAMRouterR3PathMatcher new];
+    _urlMatcher = [NSMutableDictionary new];
     
     for (Class cls in _routeControllerClasses) {
         NSAssert([cls conformsToProtocol:@protocol(RAMRouteTargetProtocol)], @"RAMRouterConfig class:%@ not conform to protocol:%@", cls, @protocol(RAMRouteTargetProtocol));
@@ -63,33 +57,20 @@
         NSAssert([config isMemberOfClass:RAMRouterConfig.class], @"RAMRouterConfig type error");
         
         config.viewControllerClass = cls;
-        [_routeControllerInfos setObject:config forKey:NSStringFromClass(cls)];
-        
-        [_r3URLMatcher addRAMControllerRouterConfig:config];
+        for (NSString *url in config.urls) {
+            [_urlMatcher setObject:config forKey:url];
+        }
     }
-    
-    [_r3URLMatcher compile];
 }
 
 - (void)dumpRouter {
-    [_r3URLMatcher dump];
+    RAMLOG_INFO(@"%@", self.urlMatcher);
 }
 
 - (BOOL)didRegistered:(RAMRouterParam *)param {
     NSAssert(param.url.length > 0, @"route url param error");
     
-    RAMRouterConfig *foundRouterConfig;
-    
-    if (param.url){
-        NSMutableDictionary *params = [NSMutableDictionary new];
-        foundRouterConfig = [_r3URLMatcher matchURL:param.url matchedParams:params];
-    }
-    
-    if (foundRouterConfig) {
-        return YES;
-    } else {
-        return NO;
-    }
+    return [_urlMatcher.allKeys containsObject:param.url];
 }
 
 - (void)routeWithUrl:(NSString *)urlString {
@@ -128,18 +109,11 @@
     NSAssert(param.url.length > 0 , @"route url param error");
     
     RAMRouterConfig *foundRouterConfig;
-    NSDictionary *urlParams;
     if (param.url){
-        NSMutableDictionary *params = [NSMutableDictionary new];
-        foundRouterConfig = [_r3URLMatcher matchURL:param.url matchedParams:params];
-        if (params.count > 0)
-            urlParams = params;
+        foundRouterConfig = [_urlMatcher objectForKey:param.url];
     }
     RAMRouterParam *routeParam = [param copy];
-    
     if (foundRouterConfig){
-        routeParam.urlParams = urlParams;
-        
         return [self routeViewController:foundRouterConfig withParam:routeParam];
     } else {
         RAMLOG_INFO(@"Cannot find route config to param:%@", param);
